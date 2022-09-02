@@ -14,14 +14,14 @@ const client = new Client({
 
 
 client.on('ready', () => {
-    console.log(`${client.user.tag} has logged in`) //string interpolation
+    console.log(`${client.user.tag} has been birthed`) //string interpolation
 });
 
 client.on("messageCreate", (message) => {
     if (message.author.bot) return;
     console.log(`[${message.author.tag}]: ${message.content}`)
     if (message.content === 'hi'){
-        message.reply('this is the testbranch');
+        message.reply('Hello');
     }
     
 }); 
